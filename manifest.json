@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Password Visibility",
+  "version": "1.0",
+  "description": "Convierte inputs de tipo password a tipo text para ver las contraseñas mientras las escribes.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "visual.png",
+    "48": "visual.png",
+    "128": "visual.png"
+  }
+}
